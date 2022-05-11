@@ -389,19 +389,6 @@ rosgraph_msgs_generate_messages_cpp/fast:
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
-
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -584,6 +571,32 @@ std_srvs_generate_messages_nodejs/fast:
 .PHONY : std_srvs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named pose_subscriber
+
+# Build rule for target.
+pose_subscriber: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pose_subscriber
+.PHONY : pose_subscriber
+
+# fast build rule for target.
+pose_subscriber/fast:
+	$(MAKE) -f learning_topic/CMakeFiles/pose_subscriber.dir/build.make learning_topic/CMakeFiles/pose_subscriber.dir/build
+.PHONY : pose_subscriber/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -717,7 +730,6 @@ help:
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
@@ -732,6 +744,8 @@ help:
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... pose_subscriber"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... turtlesim_generate_messages_lisp"
 	@echo "... turtlesim_generate_messages_nodejs"

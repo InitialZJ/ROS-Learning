@@ -147,7 +147,7 @@ add_executable(velocity_publisher src/velocity_publisher.cpp)
 target_link_libraries(velocity_publisher ${catkin_LIBRARIES})
 
 add_executable(pose_subscriber src/pose_subscriber.cpp)
-target_link_libraries(pose_subscriber ${catkin_LIBARIES})
+target_link_libraries(pose_subscriber ${catkin_LIBRARIES})
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above

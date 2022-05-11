@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -111,18 +123,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -286,21 +286,6 @@ rosgraph_msgs_generate_messages_cpp: learning_topic/CMakeFiles/rosgraph_msgs_gen
 rosgraph_msgs_generate_messages_cpp/fast:
 	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_topic/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make learning_topic/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/wsh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 learning_topic/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
@@ -513,6 +498,36 @@ std_srvs_generate_messages_nodejs/fast:
 .PHONY : std_srvs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make learning_topic/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+learning_topic/CMakeFiles/pose_subscriber.dir/rule:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_topic/CMakeFiles/pose_subscriber.dir/rule
+.PHONY : learning_topic/CMakeFiles/pose_subscriber.dir/rule
+
+# Convenience name for target.
+pose_subscriber: learning_topic/CMakeFiles/pose_subscriber.dir/rule
+
+.PHONY : pose_subscriber
+
+# fast build rule for target.
+pose_subscriber/fast:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_topic/CMakeFiles/pose_subscriber.dir/build.make learning_topic/CMakeFiles/pose_subscriber.dir/build
+.PHONY : pose_subscriber/fast
+
+# Convenience name for target.
 learning_topic/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
 	cd /home/wsh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_topic/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : learning_topic/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
@@ -632,6 +647,33 @@ velocity_publisher/fast:
 	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_topic/CMakeFiles/velocity_publisher.dir/build.make learning_topic/CMakeFiles/velocity_publisher.dir/build
 .PHONY : velocity_publisher/fast
 
+src/pose_subscriber.o: src/pose_subscriber.cpp.o
+
+.PHONY : src/pose_subscriber.o
+
+# target to build an object file
+src/pose_subscriber.cpp.o:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_topic/CMakeFiles/pose_subscriber.dir/build.make learning_topic/CMakeFiles/pose_subscriber.dir/src/pose_subscriber.cpp.o
+.PHONY : src/pose_subscriber.cpp.o
+
+src/pose_subscriber.i: src/pose_subscriber.cpp.i
+
+.PHONY : src/pose_subscriber.i
+
+# target to preprocess a source file
+src/pose_subscriber.cpp.i:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_topic/CMakeFiles/pose_subscriber.dir/build.make learning_topic/CMakeFiles/pose_subscriber.dir/src/pose_subscriber.cpp.i
+.PHONY : src/pose_subscriber.cpp.i
+
+src/pose_subscriber.s: src/pose_subscriber.cpp.s
+
+.PHONY : src/pose_subscriber.s
+
+# target to generate assembly for a file
+src/pose_subscriber.cpp.s:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_topic/CMakeFiles/pose_subscriber.dir/build.make learning_topic/CMakeFiles/pose_subscriber.dir/src/pose_subscriber.cpp.s
+.PHONY : src/pose_subscriber.cpp.s
+
 src/velocity_publisher.o: src/velocity_publisher.cpp.o
 
 .PHONY : src/velocity_publisher.o
@@ -666,6 +708,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... list_install_components"
 	@echo "... std_msgs_generate_messages_py"
@@ -675,7 +718,6 @@ help:
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
@@ -691,9 +733,10 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... pose_subscriber"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... turtlesim_generate_messages_lisp"
 	@echo "... turtlesim_generate_messages_nodejs"
@@ -703,6 +746,9 @@ help:
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... turtlesim_generate_messages_eus"
 	@echo "... velocity_publisher"
+	@echo "... src/pose_subscriber.o"
+	@echo "... src/pose_subscriber.i"
+	@echo "... src/pose_subscriber.s"
 	@echo "... src/velocity_publisher.o"
 	@echo "... src/velocity_publisher.i"
 	@echo "... src/velocity_publisher.s"
