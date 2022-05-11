@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   turtlesim
+  message_generation
 )
 
 ## System dependencies are found with CMake's conventions
@@ -75,6 +76,9 @@ find_package(catkin REQUIRED COMPONENTS
 #   geometry_msgs#   std_msgs
 # )
 
+add_message_files(FILES Person.msg)
+generate_messages(DEPENDENCIES std_msgs)
+
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
 ################################################
@@ -107,7 +111,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES learning_topic
-#  CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs turtlesim
+   CATKIN_DEPENDS geometry_msgs roscpp rospy std_msgs turtlesim message_runtime
 #  DEPENDS system_lib
 )
 
@@ -148,6 +152,15 @@ target_link_libraries(velocity_publisher ${catkin_LIBRARIES})
 
 add_executable(pose_subscriber src/pose_subscriber.cpp)
 target_link_libraries(pose_subscriber ${catkin_LIBRARIES})
+
+add_executable(person_publisher src/person_publisher.cpp)
+target_link_libraries(person_publisher ${catkin_LIBRARIES})
+add_dependencies(person_publisher ${PROJECT_NAME}_generate_messages_cpp)
+
+add_executable(person_subscriber src/person_subscriber.cpp)
+target_link_libraries(person_subscriber ${catkin_LIBRARIES})
+add_dependencies(person_subscriber ${PROJECT_NAME}_generate_messages_cpp)
+
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
