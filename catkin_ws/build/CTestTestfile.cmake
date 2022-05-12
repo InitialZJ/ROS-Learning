@@ -7,4 +7,5 @@
 subdirs("gtest")
 subdirs("learning_parameter")
 subdirs("learning_service")
+subdirs("learning_tf")
 subdirs("learning_topic")
