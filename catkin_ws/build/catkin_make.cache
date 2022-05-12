@@ -1,2 +1,2 @@
-learning_service:learning_topic
+learning_parameter:learning_service:learning_topic
 -DCATKIN_DEVEL_PREFIX=/home/wsh/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/wsh/catkin_ws/install -G Unix Makefiles
