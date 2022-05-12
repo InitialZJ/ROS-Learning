@@ -155,6 +155,9 @@ include_directories(
 add_executable(turtle_spawn src/turtle_spawn.cpp)
 target_link_libraries(turtle_spawn ${catkin_LIBRARIES})
 
+add_executable(turtle_command_server src/turtle_command_server.cpp)
+target_link_libraries(turtle_command_server ${catkin_LIBRARIES})
+
 #############
 ## Install ##
 #############

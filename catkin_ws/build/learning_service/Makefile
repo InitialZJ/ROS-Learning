@@ -68,6 +68,18 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -111,18 +123,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -632,6 +632,48 @@ turtle_spawn/fast:
 	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_service/CMakeFiles/turtle_spawn.dir/build.make learning_service/CMakeFiles/turtle_spawn.dir/build
 .PHONY : turtle_spawn/fast
 
+# Convenience name for target.
+learning_service/CMakeFiles/turtle_command_server.dir/rule:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/turtle_command_server.dir/rule
+.PHONY : learning_service/CMakeFiles/turtle_command_server.dir/rule
+
+# Convenience name for target.
+turtle_command_server: learning_service/CMakeFiles/turtle_command_server.dir/rule
+
+.PHONY : turtle_command_server
+
+# fast build rule for target.
+turtle_command_server/fast:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/build
+.PHONY : turtle_command_server/fast
+
+src/turtle_command_server.o: src/turtle_command_server.cpp.o
+
+.PHONY : src/turtle_command_server.o
+
+# target to build an object file
+src/turtle_command_server.cpp.o:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/src/turtle_command_server.cpp.o
+.PHONY : src/turtle_command_server.cpp.o
+
+src/turtle_command_server.i: src/turtle_command_server.cpp.i
+
+.PHONY : src/turtle_command_server.i
+
+# target to preprocess a source file
+src/turtle_command_server.cpp.i:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/src/turtle_command_server.cpp.i
+.PHONY : src/turtle_command_server.cpp.i
+
+src/turtle_command_server.s: src/turtle_command_server.cpp.s
+
+.PHONY : src/turtle_command_server.s
+
+# target to generate assembly for a file
+src/turtle_command_server.cpp.s:
+	cd /home/wsh/catkin_ws/build && $(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/src/turtle_command_server.cpp.s
+.PHONY : src/turtle_command_server.cpp.s
+
 src/turtle_spawn.o: src/turtle_spawn.cpp.o
 
 .PHONY : src/turtle_spawn.o
@@ -666,6 +708,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
+	@echo "... install"
 	@echo "... roscpp_generate_messages_py"
 	@echo "... list_install_components"
 	@echo "... std_msgs_generate_messages_py"
@@ -691,7 +734,6 @@ help:
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... turtlesim_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_nodejs"
@@ -703,6 +745,10 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... turtle_spawn"
+	@echo "... turtle_command_server"
+	@echo "... src/turtle_command_server.o"
+	@echo "... src/turtle_command_server.i"
+	@echo "... src/turtle_command_server.s"
 	@echo "... src/turtle_spawn.o"
 	@echo "... src/turtle_spawn.i"
 	@echo "... src/turtle_spawn.s"

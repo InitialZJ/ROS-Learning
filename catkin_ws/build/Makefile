@@ -688,6 +688,19 @@ turtle_spawn/fast:
 .PHONY : turtle_spawn/fast
 
 #=============================================================================
+# Target rules for targets named turtle_command_server
+
+# Build rule for target.
+turtle_command_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtle_command_server
+.PHONY : turtle_command_server
+
+# fast build rule for target.
+turtle_command_server/fast:
+	$(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/build
+.PHONY : turtle_command_server/fast
+
+#=============================================================================
 # Target rules for targets named learning_topic_gencpp
 
 # Build rule for target.
@@ -948,6 +961,7 @@ help:
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... turtle_spawn"
+	@echo "... turtle_command_server"
 	@echo "... learning_topic_gencpp"
 	@echo "... learning_topic_gennodejs"
 	@echo "... person_subscriber"
