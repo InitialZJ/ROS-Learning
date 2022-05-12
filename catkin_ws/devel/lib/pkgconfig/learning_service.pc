@@ -3,6 +3,6 @@ prefix=/home/wsh/catkin_ws/devel
 Name: learning_service
 Description: Description of learning_service
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/wsh/catkin_ws/devel/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: geometry_msgs roscpp rospy std_msgs turtlesim message_runtime

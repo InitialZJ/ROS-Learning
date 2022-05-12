@@ -410,10 +410,20 @@ clean: gtest/googlemock/gtest/CMakeFiles/gtest.dir/clean
 # Convenience name for "all" pass in the directory.
 learning_service/all: learning_service/CMakeFiles/turtle_spawn.dir/all
 learning_service/all: learning_service/CMakeFiles/turtle_command_server.dir/all
+learning_service/all: learning_service/CMakeFiles/person_client.dir/all
+learning_service/all: learning_service/CMakeFiles/learning_service_generate_messages.dir/all
+learning_service/all: learning_service/CMakeFiles/person_server.dir/all
 
 .PHONY : learning_service/all
 
 # Convenience name for "clean" pass in the directory.
+learning_service/clean: learning_service/CMakeFiles/turtle_spawn.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_genpy.dir/clean
+learning_service/clean: learning_service/CMakeFiles/turtle_command_server.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_generate_messages_py.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_gennodejs.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_genlisp.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/clean
 learning_service/clean: learning_service/CMakeFiles/roscpp_generate_messages_py.dir/clean
 learning_service/clean: learning_service/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 learning_service/clean: learning_service/CMakeFiles/std_srvs_generate_messages_lisp.dir/clean
@@ -421,10 +431,15 @@ learning_service/clean: learning_service/CMakeFiles/geometry_msgs_generate_messa
 learning_service/clean: learning_service/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 learning_service/clean: learning_service/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 learning_service/clean: learning_service/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+learning_service/clean: learning_service/CMakeFiles/person_client.dir/clean
 learning_service/clean: learning_service/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_generate_messages.dir/clean
 learning_service/clean: learning_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 learning_service/clean: learning_service/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 learning_service/clean: learning_service/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/clean
+learning_service/clean: learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_geneus.dir/clean
 learning_service/clean: learning_service/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 learning_service/clean: learning_service/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
 learning_service/clean: learning_service/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
@@ -435,6 +450,7 @@ learning_service/clean: learning_service/CMakeFiles/turtlesim_generate_messages_
 learning_service/clean: learning_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 learning_service/clean: learning_service/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 learning_service/clean: learning_service/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
+learning_service/clean: learning_service/CMakeFiles/person_server.dir/clean
 learning_service/clean: learning_service/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 learning_service/clean: learning_service/CMakeFiles/turtlesim_generate_messages_eus.dir/clean
 learning_service/clean: learning_service/CMakeFiles/std_srvs_generate_messages_nodejs.dir/clean
@@ -442,10 +458,11 @@ learning_service/clean: learning_service/CMakeFiles/rosgraph_msgs_generate_messa
 learning_service/clean: learning_service/CMakeFiles/turtlesim_generate_messages_lisp.dir/clean
 learning_service/clean: learning_service/CMakeFiles/turtlesim_generate_messages_nodejs.dir/clean
 learning_service/clean: learning_service/CMakeFiles/turtlesim_generate_messages_py.dir/clean
-learning_service/clean: learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 learning_service/clean: learning_service/CMakeFiles/std_srvs_generate_messages_py.dir/clean
-learning_service/clean: learning_service/CMakeFiles/turtle_spawn.dir/clean
-learning_service/clean: learning_service/CMakeFiles/turtle_command_server.dir/clean
+learning_service/clean: learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_gencpp.dir/clean
+learning_service/clean: learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/clean
 
 .PHONY : learning_service/clean
 
@@ -453,6 +470,242 @@ learning_service/clean: learning_service/CMakeFiles/turtle_command_server.dir/cl
 learning_service/preinstall:
 
 .PHONY : learning_service/preinstall
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/turtle_spawn.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/turtle_spawn.dir/all:
+	$(MAKE) -f learning_service/CMakeFiles/turtle_spawn.dir/build.make learning_service/CMakeFiles/turtle_spawn.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/turtle_spawn.dir/build.make learning_service/CMakeFiles/turtle_spawn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=38,39 "Built target turtle_spawn"
+.PHONY : learning_service/CMakeFiles/turtle_spawn.dir/all
+
+# Include target in all.
+all: learning_service/CMakeFiles/turtle_spawn.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/turtle_spawn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/turtle_spawn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/turtle_spawn.dir/rule
+
+# Convenience name for target.
+turtle_spawn: learning_service/CMakeFiles/turtle_spawn.dir/rule
+
+.PHONY : turtle_spawn
+
+# clean rule for target.
+learning_service/CMakeFiles/turtle_spawn.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/turtle_spawn.dir/build.make learning_service/CMakeFiles/turtle_spawn.dir/clean
+.PHONY : learning_service/CMakeFiles/turtle_spawn.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/turtle_spawn.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/learning_service_genpy.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/learning_service_genpy.dir/all: learning_service/CMakeFiles/learning_service_generate_messages_py.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_genpy.dir/build.make learning_service/CMakeFiles/learning_service_genpy.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_genpy.dir/build.make learning_service/CMakeFiles/learning_service_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_service_genpy"
+.PHONY : learning_service/CMakeFiles/learning_service_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/learning_service_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/learning_service_genpy.dir/rule
+
+# Convenience name for target.
+learning_service_genpy: learning_service/CMakeFiles/learning_service_genpy.dir/rule
+
+.PHONY : learning_service_genpy
+
+# clean rule for target.
+learning_service/CMakeFiles/learning_service_genpy.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_genpy.dir/build.make learning_service/CMakeFiles/learning_service_genpy.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_genpy.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_genpy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/turtle_command_server.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/turtle_command_server.dir/all:
+	$(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=36,37 "Built target turtle_command_server"
+.PHONY : learning_service/CMakeFiles/turtle_command_server.dir/all
+
+# Include target in all.
+all: learning_service/CMakeFiles/turtle_command_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/turtle_command_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/turtle_command_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/turtle_command_server.dir/rule
+
+# Convenience name for target.
+turtle_command_server: learning_service/CMakeFiles/turtle_command_server.dir/rule
+
+.PHONY : turtle_command_server
+
+# clean rule for target.
+learning_service/CMakeFiles/turtle_command_server.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/clean
+.PHONY : learning_service/CMakeFiles/turtle_command_server.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/turtle_command_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/learning_service_generate_messages_py.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/learning_service_generate_messages_py.dir/all: learning_service/CMakeFiles/std_msgs_generate_messages_py.dir/all
+learning_service/CMakeFiles/learning_service_generate_messages_py.dir/all: learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_py.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_py.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_py.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=17,18 "Built target learning_service_generate_messages_py"
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/learning_service_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_py.dir/rule
+
+# Convenience name for target.
+learning_service_generate_messages_py: learning_service/CMakeFiles/learning_service_generate_messages_py.dir/rule
+
+.PHONY : learning_service_generate_messages_py
+
+# clean rule for target.
+learning_service/CMakeFiles/learning_service_generate_messages_py.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_py.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_py.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/learning_service_gennodejs.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/learning_service_gennodejs.dir/all: learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_gennodejs.dir/build.make learning_service/CMakeFiles/learning_service_gennodejs.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_gennodejs.dir/build.make learning_service/CMakeFiles/learning_service_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_service_gennodejs"
+.PHONY : learning_service/CMakeFiles/learning_service_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/learning_service_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/learning_service_gennodejs.dir/rule
+
+# Convenience name for target.
+learning_service_gennodejs: learning_service/CMakeFiles/learning_service_gennodejs.dir/rule
+
+.PHONY : learning_service_gennodejs
+
+# clean rule for target.
+learning_service/CMakeFiles/learning_service_gennodejs.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_gennodejs.dir/build.make learning_service/CMakeFiles/learning_service_gennodejs.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_gennodejs.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_gennodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/learning_service_genlisp.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/learning_service_genlisp.dir/all: learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_genlisp.dir/build.make learning_service/CMakeFiles/learning_service_genlisp.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_genlisp.dir/build.make learning_service/CMakeFiles/learning_service_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_service_genlisp"
+.PHONY : learning_service/CMakeFiles/learning_service_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/learning_service_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/learning_service_genlisp.dir/rule
+
+# Convenience name for target.
+learning_service_genlisp: learning_service/CMakeFiles/learning_service_genlisp.dir/rule
+
+.PHONY : learning_service_genlisp
+
+# clean rule for target.
+learning_service/CMakeFiles/learning_service_genlisp.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_genlisp.dir/build.make learning_service/CMakeFiles/learning_service_genlisp.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_genlisp.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_genlisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/all: learning_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/all: learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=15 "Built target learning_service_generate_messages_lisp"
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+learning_service_generate_messages_lisp: learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/rule
+
+.PHONY : learning_service_generate_messages_lisp
+
+# clean rule for target.
+learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target learning_service/CMakeFiles/roscpp_generate_messages_py.dir
@@ -679,6 +932,43 @@ clean: learning_service/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target learning_service/CMakeFiles/person_client.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/person_client.dir/all: learning_service/CMakeFiles/learning_service_gencpp.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/person_client.dir/build.make learning_service/CMakeFiles/person_client.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/person_client.dir/build.make learning_service/CMakeFiles/person_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=26,27 "Built target person_client"
+.PHONY : learning_service/CMakeFiles/person_client.dir/all
+
+# Include target in all.
+all: learning_service/CMakeFiles/person_client.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/person_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/person_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/person_client.dir/rule
+
+# Convenience name for target.
+person_client: learning_service/CMakeFiles/person_client.dir/rule
+
+.PHONY : person_client
+
+# clean rule for target.
+learning_service/CMakeFiles/person_client.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/person_client.dir/build.make learning_service/CMakeFiles/person_client.dir/clean
+.PHONY : learning_service/CMakeFiles/person_client.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/person_client.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target learning_service/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
@@ -707,6 +997,47 @@ learning_service/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
 
 # clean rule for target.
 clean: learning_service/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/learning_service_generate_messages.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/learning_service_generate_messages.dir/all: learning_service/CMakeFiles/learning_service_generate_messages_py.dir/all
+learning_service/CMakeFiles/learning_service_generate_messages.dir/all: learning_service/CMakeFiles/learning_service_generate_messages_lisp.dir/all
+learning_service/CMakeFiles/learning_service_generate_messages.dir/all: learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/all
+learning_service/CMakeFiles/learning_service_generate_messages.dir/all: learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/all
+learning_service/CMakeFiles/learning_service_generate_messages.dir/all: learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_service_generate_messages"
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages.dir/all
+
+# Include target in all.
+all: learning_service/CMakeFiles/learning_service_generate_messages.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/learning_service_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages.dir/rule
+
+# Convenience name for target.
+learning_service_generate_messages: learning_service/CMakeFiles/learning_service_generate_messages.dir/rule
+
+.PHONY : learning_service_generate_messages
+
+# clean rule for target.
+learning_service/CMakeFiles/learning_service_generate_messages.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_generate_messages.dir/clean
 
 .PHONY : clean
 
@@ -803,6 +1134,103 @@ learning_service/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 
 # clean rule for target.
 clean: learning_service/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/all: learning_service/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/all: learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=16 "Built target learning_service_generate_messages_nodejs"
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+learning_service_generate_messages_nodejs: learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/rule
+
+.PHONY : learning_service_generate_messages_nodejs
+
+# clean rule for target.
+learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_generate_messages_nodejs.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
+.PHONY : learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+.PHONY : roscpp_generate_messages_cpp
+
+# clean rule for target.
+learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/learning_service_geneus.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/learning_service_geneus.dir/all: learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_geneus.dir/build.make learning_service/CMakeFiles/learning_service_geneus.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_geneus.dir/build.make learning_service/CMakeFiles/learning_service_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_service_geneus"
+.PHONY : learning_service/CMakeFiles/learning_service_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/learning_service_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/learning_service_geneus.dir/rule
+
+# Convenience name for target.
+learning_service_geneus: learning_service/CMakeFiles/learning_service_geneus.dir/rule
+
+.PHONY : learning_service_geneus
+
+# clean rule for target.
+learning_service/CMakeFiles/learning_service_geneus.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_geneus.dir/build.make learning_service/CMakeFiles/learning_service_geneus.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_geneus.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_geneus.dir/clean
 
 .PHONY : clean
 
@@ -1127,6 +1555,43 @@ clean: learning_service/CMakeFiles/std_srvs_generate_messages_cpp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target learning_service/CMakeFiles/person_server.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/person_server.dir/all: learning_service/CMakeFiles/learning_service_gencpp.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/person_server.dir/build.make learning_service/CMakeFiles/person_server.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/person_server.dir/build.make learning_service/CMakeFiles/person_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=30,31 "Built target person_server"
+.PHONY : learning_service/CMakeFiles/person_server.dir/all
+
+# Include target in all.
+all: learning_service/CMakeFiles/person_server.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/person_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/person_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/person_server.dir/rule
+
+# Convenience name for target.
+person_server: learning_service/CMakeFiles/person_server.dir/rule
+
+.PHONY : person_server
+
+# clean rule for target.
+learning_service/CMakeFiles/person_server.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/person_server.dir/build.make learning_service/CMakeFiles/person_server.dir/clean
+.PHONY : learning_service/CMakeFiles/person_server.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/person_server.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target learning_service/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
@@ -1351,38 +1816,6 @@ clean: learning_service/CMakeFiles/turtlesim_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir
-
-# All Build rule for target.
-learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
-.PHONY : learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_cpp: learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
-
-# clean rule for target.
-learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: learning_service/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target learning_service/CMakeFiles/std_srvs_generate_messages_py.dir
 
 # All Build rule for target.
@@ -1415,76 +1848,132 @@ clean: learning_service/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target learning_service/CMakeFiles/turtle_spawn.dir
+# Target rules for target learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir
 
 # All Build rule for target.
-learning_service/CMakeFiles/turtle_spawn.dir/all:
-	$(MAKE) -f learning_service/CMakeFiles/turtle_spawn.dir/build.make learning_service/CMakeFiles/turtle_spawn.dir/depend
-	$(MAKE) -f learning_service/CMakeFiles/turtle_spawn.dir/build.make learning_service/CMakeFiles/turtle_spawn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=27,28 "Built target turtle_spawn"
-.PHONY : learning_service/CMakeFiles/turtle_spawn.dir/all
-
-# Include target in all.
-all: learning_service/CMakeFiles/turtle_spawn.dir/all
-
-.PHONY : all
+learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/all:
+	$(MAKE) -f learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/build.make learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/build.make learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num= "Built target _learning_service_generate_messages_check_deps_Person"
+.PHONY : learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/all
 
 # Build rule for subdir invocation for target.
-learning_service/CMakeFiles/turtle_spawn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/turtle_spawn.dir/all
+learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
-.PHONY : learning_service/CMakeFiles/turtle_spawn.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/rule
 
 # Convenience name for target.
-turtle_spawn: learning_service/CMakeFiles/turtle_spawn.dir/rule
+_learning_service_generate_messages_check_deps_Person: learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/rule
 
-.PHONY : turtle_spawn
-
-# clean rule for target.
-learning_service/CMakeFiles/turtle_spawn.dir/clean:
-	$(MAKE) -f learning_service/CMakeFiles/turtle_spawn.dir/build.make learning_service/CMakeFiles/turtle_spawn.dir/clean
-.PHONY : learning_service/CMakeFiles/turtle_spawn.dir/clean
+.PHONY : _learning_service_generate_messages_check_deps_Person
 
 # clean rule for target.
-clean: learning_service/CMakeFiles/turtle_spawn.dir/clean
+learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/build.make learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/clean
+.PHONY : learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target learning_service/CMakeFiles/turtle_command_server.dir
+# Target rules for target learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir
 
 # All Build rule for target.
-learning_service/CMakeFiles/turtle_command_server.dir/all:
-	$(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/depend
-	$(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=25,26 "Built target turtle_command_server"
-.PHONY : learning_service/CMakeFiles/turtle_command_server.dir/all
-
-# Include target in all.
-all: learning_service/CMakeFiles/turtle_command_server.dir/all
-
-.PHONY : all
+learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/all: learning_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/all: learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=12 "Built target learning_service_generate_messages_cpp"
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-learning_service/CMakeFiles/turtle_command_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/turtle_command_server.dir/all
+learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
-.PHONY : learning_service/CMakeFiles/turtle_command_server.dir/rule
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-turtle_command_server: learning_service/CMakeFiles/turtle_command_server.dir/rule
+learning_service_generate_messages_cpp: learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/rule
 
-.PHONY : turtle_command_server
-
-# clean rule for target.
-learning_service/CMakeFiles/turtle_command_server.dir/clean:
-	$(MAKE) -f learning_service/CMakeFiles/turtle_command_server.dir/build.make learning_service/CMakeFiles/turtle_command_server.dir/clean
-.PHONY : learning_service/CMakeFiles/turtle_command_server.dir/clean
+.PHONY : learning_service_generate_messages_cpp
 
 # clean rule for target.
-clean: learning_service/CMakeFiles/turtle_command_server.dir/clean
+learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/learning_service_gencpp.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/learning_service_gencpp.dir/all: learning_service/CMakeFiles/learning_service_generate_messages_cpp.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_gencpp.dir/build.make learning_service/CMakeFiles/learning_service_gencpp.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_gencpp.dir/build.make learning_service/CMakeFiles/learning_service_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num= "Built target learning_service_gencpp"
+.PHONY : learning_service/CMakeFiles/learning_service_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/learning_service_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/learning_service_gencpp.dir/rule
+
+# Convenience name for target.
+learning_service_gencpp: learning_service/CMakeFiles/learning_service_gencpp.dir/rule
+
+.PHONY : learning_service_gencpp
+
+# clean rule for target.
+learning_service/CMakeFiles/learning_service_gencpp.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_gencpp.dir/build.make learning_service/CMakeFiles/learning_service_gencpp.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_gencpp.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_gencpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target learning_service/CMakeFiles/learning_service_generate_messages_eus.dir
+
+# All Build rule for target.
+learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/all: learning_service/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/all: learning_service/CMakeFiles/_learning_service_generate_messages_check_deps_Person.dir/all
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/depend
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=13,14 "Built target learning_service_generate_messages_eus"
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsh/catkin_ws/build/CMakeFiles 0
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+learning_service_generate_messages_eus: learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/rule
+
+.PHONY : learning_service_generate_messages_eus
+
+# clean rule for target.
+learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/clean:
+	$(MAKE) -f learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/build.make learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/clean
+.PHONY : learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: learning_service/CMakeFiles/learning_service_generate_messages_eus.dir/clean
 
 .PHONY : clean
 
@@ -1596,7 +2085,7 @@ clean: learning_topic/CMakeFiles/learning_topic_gennodejs.dir/clean
 learning_topic/CMakeFiles/person_subscriber.dir/all: learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/all
 	$(MAKE) -f learning_topic/CMakeFiles/person_subscriber.dir/build.make learning_topic/CMakeFiles/person_subscriber.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/person_subscriber.dir/build.make learning_topic/CMakeFiles/person_subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=21,22 "Built target person_subscriber"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=32,33 "Built target person_subscriber"
 .PHONY : learning_topic/CMakeFiles/person_subscriber.dir/all
 
 # Include target in all.
@@ -1634,7 +2123,7 @@ learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/all: learning
 learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/all: learning_topic/CMakeFiles/_learning_topic_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/build.make learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/build.make learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=12 "Built target learning_topic_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=19 "Built target learning_topic_generate_messages_cpp"
 .PHONY : learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1763,7 +2252,7 @@ learning_topic/CMakeFiles/learning_topic_generate_messages_eus.dir/all: learning
 learning_topic/CMakeFiles/learning_topic_generate_messages_eus.dir/all: learning_topic/CMakeFiles/_learning_topic_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f learning_topic/CMakeFiles/learning_topic_generate_messages_eus.dir/build.make learning_topic/CMakeFiles/learning_topic_generate_messages_eus.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/learning_topic_generate_messages_eus.dir/build.make learning_topic/CMakeFiles/learning_topic_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=13,14 "Built target learning_topic_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=20,21 "Built target learning_topic_generate_messages_eus"
 .PHONY : learning_topic/CMakeFiles/learning_topic_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1796,7 +2285,7 @@ learning_topic/CMakeFiles/learning_topic_generate_messages_py.dir/all: learning_
 learning_topic/CMakeFiles/learning_topic_generate_messages_py.dir/all: learning_topic/CMakeFiles/_learning_topic_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f learning_topic/CMakeFiles/learning_topic_generate_messages_py.dir/build.make learning_topic/CMakeFiles/learning_topic_generate_messages_py.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/learning_topic_generate_messages_py.dir/build.make learning_topic/CMakeFiles/learning_topic_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=17,18 "Built target learning_topic_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=24,25 "Built target learning_topic_generate_messages_py"
 .PHONY : learning_topic/CMakeFiles/learning_topic_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1829,7 +2318,7 @@ learning_topic/CMakeFiles/learning_topic_generate_messages_lisp.dir/all: learnin
 learning_topic/CMakeFiles/learning_topic_generate_messages_lisp.dir/all: learning_topic/CMakeFiles/_learning_topic_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f learning_topic/CMakeFiles/learning_topic_generate_messages_lisp.dir/build.make learning_topic/CMakeFiles/learning_topic_generate_messages_lisp.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/learning_topic_generate_messages_lisp.dir/build.make learning_topic/CMakeFiles/learning_topic_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=15 "Built target learning_topic_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=22 "Built target learning_topic_generate_messages_lisp"
 .PHONY : learning_topic/CMakeFiles/learning_topic_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1861,7 +2350,7 @@ clean: learning_topic/CMakeFiles/learning_topic_generate_messages_lisp.dir/clean
 learning_topic/CMakeFiles/velocity_publisher.dir/all:
 	$(MAKE) -f learning_topic/CMakeFiles/velocity_publisher.dir/build.make learning_topic/CMakeFiles/velocity_publisher.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/velocity_publisher.dir/build.make learning_topic/CMakeFiles/velocity_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=29,30 "Built target velocity_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=40,41 "Built target velocity_publisher"
 .PHONY : learning_topic/CMakeFiles/velocity_publisher.dir/all
 
 # Include target in all.
@@ -1899,7 +2388,7 @@ learning_topic/CMakeFiles/learning_topic_generate_messages_nodejs.dir/all: learn
 learning_topic/CMakeFiles/learning_topic_generate_messages_nodejs.dir/all: learning_topic/CMakeFiles/_learning_topic_generate_messages_check_deps_Person.dir/all
 	$(MAKE) -f learning_topic/CMakeFiles/learning_topic_generate_messages_nodejs.dir/build.make learning_topic/CMakeFiles/learning_topic_generate_messages_nodejs.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/learning_topic_generate_messages_nodejs.dir/build.make learning_topic/CMakeFiles/learning_topic_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=16 "Built target learning_topic_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=23 "Built target learning_topic_generate_messages_nodejs"
 .PHONY : learning_topic/CMakeFiles/learning_topic_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1963,7 +2452,7 @@ clean: learning_topic/CMakeFiles/learning_topic_genpy.dir/clean
 learning_topic/CMakeFiles/pose_subscriber.dir/all:
 	$(MAKE) -f learning_topic/CMakeFiles/pose_subscriber.dir/build.make learning_topic/CMakeFiles/pose_subscriber.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/pose_subscriber.dir/build.make learning_topic/CMakeFiles/pose_subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=23,24 "Built target pose_subscriber"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=34,35 "Built target pose_subscriber"
 .PHONY : learning_topic/CMakeFiles/pose_subscriber.dir/all
 
 # Include target in all.
@@ -2041,7 +2530,7 @@ clean: learning_topic/CMakeFiles/learning_topic_generate_messages.dir/clean
 learning_topic/CMakeFiles/person_publisher.dir/all: learning_topic/CMakeFiles/learning_topic_generate_messages_cpp.dir/all
 	$(MAKE) -f learning_topic/CMakeFiles/person_publisher.dir/build.make learning_topic/CMakeFiles/person_publisher.dir/depend
 	$(MAKE) -f learning_topic/CMakeFiles/person_publisher.dir/build.make learning_topic/CMakeFiles/person_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=19,20 "Built target person_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsh/catkin_ws/build/CMakeFiles --progress-num=28,29 "Built target person_publisher"
 .PHONY : learning_topic/CMakeFiles/person_publisher.dir/all
 
 # Include target in all.

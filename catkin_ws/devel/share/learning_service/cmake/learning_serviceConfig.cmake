@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(learning_service_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/wsh/catkin_ws/devel/include " STREQUAL " ")
   set(learning_service_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/wsh/catkin_ws/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/wsh/catkin_ws/devel/lib;/home/wsh/catkin_ws/devel/lib;/home/wsh/Desktop/playground/devel/lib;/home/wsh/Desktop/ptzforward/devel/lib;/home/wsh/Desktop/droneyee_ws/devel/lib;/home/wsh/Desktop/mymsg/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/wsh/catkin_ws/devel/lib;/home/wsh/Desktop/playground/devel/lib;/home/wsh/Desktop/ptzforward/devel/lib;/home/wsh/Desktop/droneyee_ws/devel/lib;/home/wsh/Desktop/mymsg/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(learning_service_EXPORTED_TARGETS "")
+set(learning_service_EXPORTED_TARGETS "learning_service_generate_messages_cpp;learning_service_generate_messages_eus;learning_service_generate_messages_lisp;learning_service_generate_messages_nodejs;learning_service_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${learning_service_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${learning_service_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "")
+set(depends "geometry_msgs;roscpp;rospy;std_msgs;turtlesim;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND learning_service_EXPORTED_TARGETS ${${learning_service_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "learning_service-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${learning_service_DIR}/${extra})
