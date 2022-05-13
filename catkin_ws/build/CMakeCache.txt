@@ -370,6 +370,12 @@ gtest_hide_internal_symbols:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Value Computed by CMake
+learning_launch_BINARY_DIR:STATIC=/home/wsh/catkin_ws/build/learning_launch
+
+//Value Computed by CMake
+learning_launch_SOURCE_DIR:STATIC=/home/wsh/catkin_ws/src/learning_launch
+
+//Value Computed by CMake
 learning_parameter_BINARY_DIR:STATIC=/home/wsh/catkin_ws/build/learning_parameter
 
 //Value Computed by CMake
@@ -569,7 +575,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
