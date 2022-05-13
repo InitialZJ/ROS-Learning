@@ -30,3 +30,5 @@ https://www.bilibili.com/video/BV1zt411G7Vn
    - py: 在scripts下创建.py文件，执行命令chmod +x ....py授予执行权限，无需重新编译
 
 7. 运行：rosrun learning_topic velocity_publisher(.py)
+
+8. 运行launch文件：roslaunch learning_launch simple.launch
