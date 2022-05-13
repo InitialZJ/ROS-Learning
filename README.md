@@ -32,3 +32,5 @@ https://www.bilibili.com/video/BV1zt411G7Vn
 7. 运行：rosrun learning_topic velocity_publisher(.py)
 
 8. 运行launch文件：roslaunch learning_launch simple.launch
+
+9. 可视化工具：rqt、rviz、gazabo
